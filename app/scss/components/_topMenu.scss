@@ -1,0 +1,31 @@
+.topMenu{
+    margin: 0;
+    padding: 0;
+    @include row-flex();
+    list-style-type: none;
+    justify-content: space-between;
+    align-items: center;
+    &__item{
+        @include col();
+        &._active{
+            .topMenu__link{
+                color: #fff;
+            }
+        }
+    }
+    &__link{
+        display: inline-block;
+        color: #b2def7;
+        text-transform: uppercase;
+        text-decoration: none;;
+        font-size: 18px;
+        font-weight: 900;
+        padding: 15px 0;
+        transition: .3s;
+        font-family: "Roboto";
+        &:hover{
+            transition: .3s;
+            color: #fff;
+        }
+    }
+}

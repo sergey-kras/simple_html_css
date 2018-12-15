@@ -1,0 +1,11 @@
+.topbar{
+    top: 0;
+    left: 0;
+    width: 100%;
+    position: absolute;
+    z-index: 2;
+    &__container{
+        @include wrapper();
+        box-sizing: border-box;
+    }
+}

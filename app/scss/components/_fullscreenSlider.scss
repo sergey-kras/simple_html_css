@@ -1,0 +1,28 @@
+.fullscreenSlider{
+
+    &__item{
+        height: 80vh;
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        &:after{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: #000;
+            opacity: .3;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    &__container{
+        @include wrapper();
+    }
+    &__banners{
+
+    }
+    &__content{
+
+    }
+}

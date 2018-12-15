@@ -14,10 +14,10 @@ gulp.task('smartgrid', function () {
     var settings = {
         outputStyle: 'scss', /* less || scss || sass || styl */
         columns: 12, /* number of grid columns */
-        offset: '30px', /* gutter width px || % */
+        offset: '15px', /* gutter width px || % */
         mobileFirst: false, /* mobileFirst ? 'min-width' : 'max-width' */
         container: {
-            maxWidth: '1110px', /* max-width оn very large screen */
+            maxWidth: '1400px', /* max-width оn very large screen */
             fields: '30px' /* side fields */
         },
         breakPoints: {
@@ -77,6 +77,7 @@ gulp.task('compress',['clean-img'], function() {
         .pipe(gulp.dest('./dist/img/'))
 });
 gulp.task('watcher',['html', 'libs', 'sass'], function() {
+    gulp.watch("./app/scss/**/*.scss", ['sass']);
     gulp.watch("./app/scss/*.scss", ['sass']);
     gulp.watch("./app/js/*.js", ['libs']);
     gulp.watch("./app/img/*", ['compress']);

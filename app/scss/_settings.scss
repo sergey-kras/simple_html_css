@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&subset=cyrillic');
 @mixin resp($min, $max){
   @media screen and (min-width: $min + 'px') and (max-width: $max + 'px'){
     @content
@@ -7,10 +7,9 @@
 .container{
   @include wrapper();
 }
-a,div,span,h1,h2,h3,h4,h5,h6,p,li,ul{
-  font-family: "Open Sans";
-}
 img{
   max-width: 100%;
 }
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,600,700&subset=cyrillic,cyrillic-ext');
+.content{
+  background-color: #cceeff;
+}
