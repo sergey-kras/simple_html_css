@@ -1,21 +1,12 @@
-<<<<<<< HEAD
 @mixin resp($min, $max) {
     @media screen and (min-width: $min + 'px') and (max-width: $max + 'px') {
         @content
     }
-=======
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&subset=cyrillic');
-@mixin resp($min, $max){
-  @media screen and (min-width: $min + 'px') and (max-width: $max + 'px'){
-    @content
-  }
->>>>>>> 3f58ff6652276e45fd523f4cd229cbfff1bec9d2
 }
 
 .container {
     @include wrapper();
 }
-<<<<<<< HEAD
 
 img {
     max-width: 100%;
@@ -24,11 +15,4 @@ img {
 html,
 body {
     font-size: 24px;
-=======
-img{
-  max-width: 100%;
-}
-.content{
-  background-color: #cceeff;
->>>>>>> 3f58ff6652276e45fd523f4cd229cbfff1bec9d2
 }

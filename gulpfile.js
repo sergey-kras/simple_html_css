@@ -17,11 +17,7 @@ gulp.task('smartgrid', function () {
         offset: '15px', /* gutter width px || % */
         mobileFirst: false, /* mobileFirst ? 'min-width' : 'max-width' */
         container: {
-<<<<<<< HEAD
-            maxWidth: '1360px', /* max-width оn very large screen */
-=======
             maxWidth: '1400px', /* max-width оn very large screen */
->>>>>>> 3f58ff6652276e45fd523f4cd229cbfff1bec9d2
             fields: '30px' /* side fields */
         },
         breakPoints: {
