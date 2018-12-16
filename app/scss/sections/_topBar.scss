@@ -1,0 +1,58 @@
+.topBar {
+    @include wrapper();
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 9999;
+    &__content {
+        @include row-flex();
+        margin-top: 70px;
+        display: flex;
+        align-items: center;
+    }
+    &__buttons {
+        @include size(4.7);
+        @include col();
+        display: flex;
+    }
+    &__button {
+        margin-right: 45px;
+    }
+    &__logo {
+        @include size(2.3);
+        @include col();
+        text-align: center;
+        background-image: url('../img/mainDisplay/contentElements/Logotype.svg');
+        background-size: contain;
+        height: 113px;
+        background-position: center center;
+        background-repeat: no-repeat;
+        &._onWhite_background {
+            background-image: url('../img/mainDisplay/contentElements/Logotypebgwhite.svg');
+        }
+    }
+    &__path {
+        @include size(4);
+        @include col();
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    &__burger {
+        @include size(1);
+        @include col();
+    }
+    &__download {
+        width: 18px;
+        height: 20px;
+        background-image: url('../img/icons/if_download_216183.png');
+        background-position: center center;
+        background-size: contain;
+        &._onWhite_background {
+            background-image: url('../img/mainDisplay/contentElements/downloadOnWhite.png');
+        }
+    }
+}

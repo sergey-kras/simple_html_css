@@ -58,65 +58,6 @@ $win.scroll(function() {
         }
     }
 });
-var blockMenu = $('.menu');
-var content = $('.content');
-$win.scroll(function() {
-    if ($win.scrollTop()  >= content.offset().top) {
-        blockMenu.css({position : 'fixed'})
-    }
-    else {
-        blockMenu.css({position : 'absolute'})
-    }
-});
-
-
-var burger = $('.menu__burger');
-var fade = $('.fade');
-var left = $('.content .container').offset().left - 15;
-var menu = $('.menu__nav');
-var menuFooter = $('.menu__footer');
-burger.css({'margin-left':left});
-
-burger.on('click',function(){
-    if(burger.hasClass('active')){
-        hideMenu()
-    }
-    else{
-        showMenu();
-    }
-});
-var deleyForBlockMenu;
-var deleyForAll = 400;
-if (left <= 300){
-    deleyForBlockMenu = 400;
-}
-else {
-    deleyForBlockMenu = 0;
-}
-function hideMenu() {
-    burger.animate({'margin-left':left},deleyForAll).removeClass('active');
-    menu.animate({'margin-left':-100,'opacity':0},deleyForAll, function () {
-        menu.css({display:'none'})
-    });
-    menuFooter.animate({'margin-left':-100,'opacity':0},deleyForAll, function () {
-        menuFooter.css({display:'none'})
-    });
-    if (left <= 300){
-        blockMenu.animate({width:0,maxWidth:0,minWidth: 0},deleyForBlockMenu);
-    }
-    fade.fadeOut(deleyForAll);
-}
-function showMenu() {
-    burger.animate({'margin-left':20},deleyForAll).addClass('active');
-    menu.css({display:'flex'}).animate({'margin-left':0,'opacity':1},deleyForAll);
-    menuFooter.css({display:'flex'}).animate({'margin-left':0,'opacity':1},deleyForAll);
-    blockMenu.animate({width:left+40,maxWidth:left+40,minWidth: 300+'px'},deleyForBlockMenu);
-    fade.fadeIn(deleyForAll);
-}
-fade.on('click',function(){
-    console.log(1);
-    hideMenu();
-});
 
 
 
@@ -158,13 +99,12 @@ $('.button-group').each( function( i, buttonGroup ) {
 
 
 $(window).on('load', function() {
-    $('.fs-slides').owlCarousel({
-        items: 1,
-        pullDrag: false,
+    $('.peopleSlider').addClass('owl-carousel');
+    $('.peopleSlider').owlCarousel({
+        nav: true,
+        items: 4,
         loop: true,
-        dots: false,
-        animateOut: 'fadeOut',
-        responsiveRefreshRate: 0,
+        navText:['<img src="./img/mainDisplay/contentElements/slidearrow.svg">','<img src="./img/mainDisplay/contentElements/slidearrow.svg">']
     });
 });
 

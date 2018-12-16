@@ -1,0 +1,17 @@
+.iconText{
+    display: flex;
+    align-items: center;
+    &__text{
+        font-family: Roboto;
+        font-weight: 400;
+        font-size: 0.625rem;
+        color: #282828;
+        margin-top: -4px;
+    }
+    &__icon{
+        margin-right: 10px;
+        & > img{
+            max-width: 24px;
+        }
+    }
+}

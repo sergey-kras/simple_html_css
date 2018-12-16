@@ -1,0 +1,52 @@
+.successBlock {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &__image {
+        margin-right: 10px;
+        &._folder>img {
+            width: 75px;
+        }
+        &._eye>img {
+            width: 86px;
+        }
+        &._win>img {
+            width: 58px;
+        }
+        &._group>img {
+            width: 99px;
+            margin-top: -22px;
+        }
+    }
+    &__info {
+        text-align: left;
+        &._topText {
+            position: relative;
+            &:before {
+                content: 'тыс.';
+                position: absolute;
+                color: #282828;
+                font-family: Acrom;
+                font-size: 40px;
+                font-weight: 700;
+                letter-spacing: -2.4px;
+                top: -29px;
+                left: 4px;
+            }
+        }
+    }
+    &__bigNumber {
+        color: #282828;
+        font-family: Acrom;
+        font-size: 60px;
+        font-weight: 700;
+        letter-spacing: -3.6px;
+    }
+    &__text {
+        color: #282828;
+        font-family: Acrom;
+        font-size: 12px;
+        font-weight: 400;
+        padding-left: 5px;
+    }
+}

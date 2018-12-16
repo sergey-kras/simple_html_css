@@ -1,0 +1,189 @@
+.stepLine {
+    @include wrapper();
+    position: fixed;
+    z-index: 999;
+    right: 50px;
+    top: 50%;
+    transform: translate(0, -50%);
+    margin-top: 5vh;
+    &__steps {
+        @include row-flex();
+        justify-content: flex-end;
+        align-items: flex-end;
+        flex-direction: column-reverse;
+    }
+    &__step {
+        @include col();
+        margin-bottom: 85px;
+        position: relative;
+        cursor: pointer;
+        .stepLine__pin:after {
+            content: '';
+            bottom: -2px;
+            width: 4px;
+            height: 12px;
+            left: 6px;
+            background-color: #4579c5;
+        }
+        .stepLine__pin:before {
+            content: '';
+            top: -2px;
+            width: 4px;
+            height: 12px;
+            left: 6px;
+            background-color: #4579c5;
+        }
+        &:last-of-type {
+            .stepLine__pin:after {
+                content: '';
+                bottom: -2px;
+                width: 4px;
+                height: 12px;
+                left: 6px;
+                background-color: #4579c5;
+            }
+            .stepLine__pin:before {
+                display: none;
+            }
+        }
+        &:first-of-type {
+            margin-bottom: 0;
+            .stepLine__pin:after {
+                content: '';
+                top: -2px;
+                width: 4px;
+                height: 12px;
+                left: 6px;
+                background-color: #4579c5;
+            }
+            .stepLine__pin:before {
+                display: none;
+            }
+        }
+        &._status_active {
+            .stepLine__pin:after {
+                content: '';
+                position: absolute;
+                left: 4px;
+                top: 4px;
+                width: 8px;
+                height: 8px;
+                background-color: #fff;
+                border-radius: 100%;
+            }
+            .stepLine__text {
+                color: #fff;
+            }
+        }
+        &._status_active~& {
+            .stepLine__pin:after {
+                content: '';
+                position: absolute;
+                left: 4px;
+                top: 4px;
+                width: 8px;
+                height: 8px;
+                background-color: #fff;
+                border-radius: 100%;
+            }
+        }
+    }
+    &__text {
+        text-transform: uppercase;
+        font-size: 0.45rem;
+        color: #c0d8ff;
+        font-family: Roboto;
+        font-weight: 700;
+        padding-right: 22px;
+        position: relative;
+        margin-top: 2px;
+    }
+    &__pin {
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        top: 0;
+        right: 0px;
+        background-color: #4579c5;
+        border-radius: 100%;
+        box-shadow: 0px 0px 5px 0px rgba(173, 173, 173, 0.2);
+    }
+    &__line {
+        position: absolute;
+        right: 36px;
+        top: 0;
+        width: 4px;
+        height: 100%;
+        background-color: #4579c5;
+        box-shadow: 0px 0px 5px 0px rgba(173, 173, 173, 0.2);
+    }
+    &__filling {
+        position: absolute;
+        top: 4px;
+        left: 1px;
+        width: 2px;
+        height: 70%;
+        background-color: #fff;
+        z-index: 999;
+        border-radius: 10px;
+    }
+    &._onWhite_background {
+        .stepLine__pin {
+            background-color: #dddddd;
+            &:after {
+                z-index: 2;
+                background-color: #3c8ffc;
+                background-image: linear-gradient(to right, #4b2efe 0%, #4581fa 100%);
+            }
+        }
+        .stepLine__filling {
+            background-color: #3c8ffc;
+            z-index: 0;
+        }
+        .stepLine__line {
+            background-color: #dddddd;
+        }
+        .stepLine__text {
+            color: #999999;
+        }
+        .stepLine__step._status_active{
+            .stepLine__text {
+                color: #282828;
+            }
+            .stepLine__pin:before {
+                display: block;
+                z-index: 1;
+                position: absolute;
+                width: 2px;
+                height: 100%;
+                left: 7px;
+                top: 0;
+                background-color: #3c8ffc;
+            }
+            &~.stepLine__step{
+                .stepLine__pin:before {
+                    display: block;
+                    z-index: 1;
+                    position: absolute;
+                    width: 2px;
+                    height: 100%;
+                    left: 7px;
+                    top: 0;
+                    background-color: #3c8ffc;
+                }
+            }
+        }
+        .stepLine__step:first-of-type{
+            .stepLine__pin:before {
+                height: 50% !important;
+                bottom: 4px !important;
+            }
+        }
+        .stepLine__step:last-of-type{
+            .stepLine__pin:before {
+                height: 100% !important;
+                top: 4px !important;
+            }
+        }
+    }
+}

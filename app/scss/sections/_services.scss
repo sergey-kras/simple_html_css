@@ -1,0 +1,56 @@
+.services{
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    background-image: url('../img/mainDisplay/fon.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    &__sunEffect{
+        z-index: 0;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-image: url('../img/mainDisplay/absoluteElements/services.png');
+    }
+    &__content{
+        @include wrapper();
+        position: relative;
+        width: 100%;
+        max-width: 1430px;
+        padding-top: 22vh;
+    }
+    &__title{
+        margin-bottom: 60px;
+    }
+    &__priceCards{
+        @include row-flex();
+        margin-right: -25px;
+        margin-left: -25px;
+        margin-bottom: 80px;
+    }
+    &__priceCard{
+        width: calc(25% - 50px);
+        margin-right: 25px;
+        margin-left: 25px;
+    }
+    &__stepsDevelop{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 55px;
+        @include col();
+    }
+    &__stepDevelop{
+        @include size(2);
+    }
+    &__bottomText{
+        padding-left: 5%;
+        width: 100%;
+        margin-top: 50px; 
+    }
+}

@@ -1,0 +1,57 @@
+.blog {
+    min-height: 100vh;
+    &__content {
+        @include wrapper();
+        position: relative;
+        width: 100%;
+        max-width: 1430px;
+        padding-top: 22vh;
+        box-sizing: border-box;
+    }
+    &__topline {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 15px;
+    }
+    &__labels {
+        display: flex;
+    }
+    &__label {
+        margin-left: 10px;
+    }
+    &__posts{
+        width: calc(100% - 70px);
+        margin-left: 70px;
+        align-self: flex-end;
+        flex-wrap: wrap;
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        align-items: center;
+        border-top: 2px solid #dddddd;
+        position: relative;
+    }
+    &__post{
+        width: 50%;
+        padding-right: 25px; 
+        box-sizing: border-box;
+        border-right: 2px solid #dddddd;
+        border-bottom: 2px solid #dddddd;
+        &:nth-child(2n){
+            padding-left: 25px; 
+            padding-right: 0; 
+            border-right: none;
+        }
+    }
+    &__loadMore{
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, 50%);
+    }
+    &__bottomText{
+        margin-left: 70px;
+        margin-top: 11vh;
+
+    }
+}

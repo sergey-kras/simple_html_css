@@ -1,0 +1,120 @@
+.peopleCart {
+    position: relative;
+    &__image {
+        position: relative;
+        background: no-repeat center center;
+        background-size: contain;
+        height: 328px;
+        width: 100%;
+        &:before {
+            content: '';
+            position: absolute;
+            width: 95%;
+            height: 90%;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #f2f2f2;
+            border-radius: 10px;
+            z-index: -1;
+        }
+    }
+    &__info {
+        text-align: center;
+        margin-top: 18px;
+    }
+    &__title {
+        color: #282828;
+        font-family: Roboto;
+        font-size: .666rem;
+        font-weight: 500;
+        margin: 0;
+        margin-bottom: 6px;
+    }
+    &__text {
+        color: #282828;
+        font-family: Roboto;
+        font-size: 12px;
+        font-weight: 400;
+        margin: 0;
+    }
+    &__light {
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        &:after {
+            content: '';
+            position: absolute;
+            right: 0;
+            z-index: -2;
+            height: 100px;
+            width: 5px;
+            border-radius: 5px;
+            top: 50%;
+            transform: translate(0, -50%);
+        }
+        &:before {
+            content: '';
+            position: absolute;
+            left: 0;
+            z-index: -2;
+            height: 100px;
+            width: 5px;
+            border-radius: 5px;
+            top: 50%;
+            transform: translate(0, -50%);
+        }
+    }
+    &._theme_bue {
+        .peopleCart__light {
+            &:after {
+                background: linear-gradient(to left, rgba(47, 60, 254, 1) 0%, rgba(65, 116, 254, 1) 100%);
+                box-shadow: 0px 0px 45px 2px rgba(65, 116, 254, 1);
+            }
+            &:before {
+                background: linear-gradient(to right, rgba(47, 60, 254, 1) 0%, rgba(65, 116, 254, 1) 100%);
+                box-shadow: 0px 0px 45px 2px rgba(65, 116, 254, 1);
+            }
+        }
+    }
+    &._theme_orange {
+        .peopleCart__light {
+            &:after {
+                background: linear-gradient(to left, rgba(255, 201, 121, 1) 0%, rgba(254, 140, 65, 1) 100%);
+                box-shadow: 0px 0px 45px 2px rgba(254, 140, 65, 1);
+            }
+            &:before {
+                background: linear-gradient(to right, rgba(255, 201, 121, 1) 0%, rgba(254, 140, 65, 1) 100%);
+                box-shadow: 0px 0px 45px 2px rgba(254, 140, 65, 1);
+            }
+        }
+    }
+    &._theme_red {
+        .peopleCart__light {
+            &:after {
+                background: linear-gradient(to left, rgba(254, 136, 122, 1) 0%, rgba(254, 65, 84, 1) 100%);
+                box-shadow: 0px 0px 45px 2px rgba(254, 65, 84, 1);
+            }
+            &:before {
+                background: linear-gradient(to right, rgba(254, 136, 122, 1) 0%, rgba(254, 65, 84, 1) 100%);
+                box-shadow: 0px 0px 45px 2px rgba(254, 65, 84, 1);
+            }
+        }
+    }
+    &._theme_lazure {
+        .peopleCart__light {
+            &:after {
+                background: -webkit-linear-gradient(left, rgba(47, 180, 254, 1) 0%, rgba(65, 223, 253, 1) 100%);
+                box-shadow: 0px 0px 45px 2px rgba(65, 223, 253, 1);
+            }
+            &:before {
+                background: -webkit-linear-gradient(left, rgba(47, 180, 254, 1) 0%, rgba(65, 223, 253, 1) 100%);
+                box-shadow: 0px 0px 45px 2px rgba(65, 223, 253, 1);
+            }
+        }
+    }
+}

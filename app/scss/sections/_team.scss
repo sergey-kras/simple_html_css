@@ -1,0 +1,36 @@
+.team{
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    background-size: cover;
+    background-repeat: no-repeat; 
+    &__content{
+        @include wrapper();
+        position: relative;
+        width: 100%;
+        max-width: 1430px;
+        padding-top: 22vh;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    &__title{
+        width: 100%;
+        margin-bottom: 60px;
+    }
+    &__peopleSlider{
+        max-width: 1300px;
+        align-self: flex-end;
+    }
+    &__numberItem{
+        @include size(3);
+        @include col();
+    }
+    &__numbers{
+        @include row-flex();
+        margin-top: 71px;
+        margin-bottom: 100px;
+    }
+}

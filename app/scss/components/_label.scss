@@ -1,0 +1,29 @@
+.label{
+    width: 70px;
+    height: 26px;
+    color: #fff;
+    border-radius: 26px;
+    text-align: center;
+    font-size: 0.541rem;
+    font-family: Roboto;
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    justify-content: center;
+    &._blue{
+        background-color: #065de1;
+    }
+    &._red{
+        background-color: #e1063a;
+    }
+    &._skyBlue{
+        background-color: #069be1;
+    }
+    &._green{
+        background-color: #1bd2ad;
+    }
+    &._gray{
+        color: #282828;
+        background-color: #d8d8d8;
+    }
+}

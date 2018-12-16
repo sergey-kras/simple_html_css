@@ -1,0 +1,27 @@
+.peopleSlider{
+    position: relative;
+    border-bottom: 1px solid #d8d8d8;
+    &__item{
+        margin-right: 45px;
+        margin-left: 45px;
+        margin-bottom: 50px;
+    }
+    .owl-nav.disabled{
+        font-size: 0;
+        position: absolute;
+        top: calc(50% - 50px);
+        transform: translateY(-50%);
+        left: -1%;
+        width: 102%;
+        display: flex;
+        justify-content: space-between;
+        z-index: -1;
+        .owl-prev{
+            outline: none;
+            transform: rotate(-180deg);
+        }
+        .owl-next{
+            outline: none;
+        }
+    }
+}

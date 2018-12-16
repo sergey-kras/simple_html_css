@@ -1,0 +1,76 @@
+.portfolio {
+    min-height: 100vh;
+    padding-top: 22vh;
+    width: calc(100% - 160px);
+    max-width: 1820px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    &__tags {
+        overflow-x: hidden;
+        display: flex;
+        margin-right: -12px;
+        margin-left: -12px;
+        position: relative;
+        overflow: -moz-scrollbars-none;
+        -ms-overflow-style: none;
+        &::-webkit-scrollbar {
+            width: 0;
+        }
+        &:before,
+        &:after {
+            content: '';
+            height: 100%;
+            width: 15%;
+            position: absolute;
+            top: 0;
+        }
+        &:before {
+            left: 0;
+            background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+        }
+        &:after {
+            right: 0;
+            background: linear-gradient(to left, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+        }
+    }
+    &__tag {
+        margin-right: 12px;
+        margin-left: 12px;
+        cursor: pointer;
+        padding: 14px 24px;
+        background-color: #ededed;
+        width: max-content;
+        border-radius: 100px;
+        font-family: Roboto;
+        font-size: .55rem;
+        min-width: max-content;
+    }
+    &__cases {
+        margin-right: -5px;
+        margin-left: -5px;
+        @include wrapper();
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &__case {
+        @include size(2);
+        margin-top: 80px;
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+    &__loadMore {
+        margin: 0 auto;
+        margin-top: 77px;
+    }
+    &__hint {
+        text-align: right;
+    }
+    &__hintText {
+        color: #3e75fd;
+        font-family: Roboto;
+        font-size: .625rem;
+        font-weight: 700;
+        line-height: 55px;
+        margin-left: 2px;
+    }
+}

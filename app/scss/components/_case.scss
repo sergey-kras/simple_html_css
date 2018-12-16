@@ -1,0 +1,73 @@
+.case {
+    cursor: pointer;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    &__image {
+        width: 100%;
+        margin-bottom: 23px;
+        padding-top: 100%;
+        position: relative;
+        background: linear-gradient(to right, rgba(65, 29, 228, 1) 0%, rgba(41, 37, 81, 1) 100%);
+    }
+    &__photo {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-top-left-radius: 70%;
+    }
+    &__hover {
+        transition: .3s;
+        opacity: 0;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-image: url('../img/mainDisplay/contentElements/Sun_effect.png');
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+    }
+    &__icon {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+    }
+    &__textHover {
+        font-family: Roboto;
+        font-weight: 500;
+        font-size: .55rem;
+        color: #ffffff;
+        margin-bottom: 22px;
+    }
+    &__iconHover {
+        margin-right: 8px;
+        margin-bottom: 17px;
+    }
+    &:hover {
+        .case__hover {
+            transition: .3s;
+            opacity: 1;
+        }
+    }
+    &__descroption{
+        color: #282828;
+        font-weight: 1000;
+        font-family: Roboto;
+        font-size: 1rem;
+        text-transform: uppercase;
+    }
+    &__subDescroption{
+        text-transform: uppercase;
+        font-size: .415rem;
+        font-family: Roboto;
+        color: #3e75fd;
+        font-weight: 1000;
+        line-height: .418rem;
+        margin-left: 12px;
+    }
+}

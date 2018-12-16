@@ -1,0 +1,29 @@
+.inSocial{
+    text-decoration: underline;
+    font-family: Acrom;
+    font-weight: 700;
+    font-size: 22px;
+    color: #ffffff;
+    position: relative;
+    &__topCircle, &__botCircle{
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        background-color: #ffffff;
+        border-radius: 100%;
+        background-image: linear-gradient(to right, rgba(69, 27, 255, 0.25) 0%, rgba(69, 27, 255, 0) 100%);
+    }
+    &__figure{
+        top: -515px;
+        left: -171px;
+        position: absolute;
+    }
+    &__topCircle{
+        top: -4px;
+        left: -1px;
+    } 
+    &__botCircle{
+        bottom: 1px;
+        right: -1px;
+    }
+}

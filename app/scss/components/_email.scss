@@ -1,0 +1,21 @@
+.email{
+    display: flex;
+    &__icon{
+        margin-right: 13px;
+    }
+    &__title{
+        letter-spacing: -1.32px;
+        font-weight: 700;
+        font-size: 0.916rem;
+        font-family: Acrom;
+        color: #ffffff;
+        margin-bottom: 8px;
+        text-decoration: none;
+    }
+    &__text{
+        font-size: 0.583rem;
+        color: #dbdeff;
+        font-weight: 400;
+        font-family: Acrom;
+    }
+}

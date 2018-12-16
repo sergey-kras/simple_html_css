@@ -1,0 +1,126 @@
+.leftBar {
+    @include wrapper();
+    position: fixed;
+    z-index: 999;
+    left: 50px;
+    top: 50%;
+    transform: translate(0, -50%);
+    margin-top: 5vh;
+    &__content {
+        @include row-flex();
+        justify-content: space-between;
+        align-items: flex-end;
+        height: 50vh;
+        flex-direction: column;
+    }
+    &__socials {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__social {
+        margin-bottom: 20px;
+        display: inline-block;
+    }
+    &__pointer {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    &__pointerImage {
+        margin-top: 60px;
+    }
+    &__be {
+        width: 19px;
+        height: 14px;
+        background-image: url('../img/icons/if_Behance_alt_367573.png');
+        background-size: contain;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+    &__sk {
+        width: 20px;
+        height: 21px;
+        background-image: url('../img/icons/if_07-skype_104495.png');
+        background-size: contain;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+    &__inst {
+        width: 20px;
+        height: 20px;
+        background-image: url('../img/icons/if_38-instagram_1161953.png');
+        background-size: contain;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+    &__vk {
+        width: 20px;
+        height: 20px;
+        background-image: url('../img/icons/if_vkontakte_306170.png');
+        background-size: contain;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+    &__mouse {
+        width: 24px;
+        height: 78px;
+        background-image: url('../img/icons/tobot.png');
+        background-size: contain;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+    &__text {
+        font-family: Roboto;
+        font-weight: 700;
+        font-size: .55rem;
+        color: #ffffff;
+        text-transform: uppercase;
+        transform: rotate(-90deg);
+        margin: -12px;
+    }
+    &._onWhite_background {
+        .leftBar__be {
+            background-image: url('../img/mainDisplay/contentElements/behanceOnWhite.png');
+        }
+        .leftBar__sk {
+            background-image: url('../img/mainDisplay/contentElements/skypeOnWhite.png');
+        }
+        .leftBar__inst {
+            background-image: url('../img/mainDisplay/contentElements/instaOnWhite.png');
+        }
+        .leftBar__vk {
+            background-image: url('../img/mainDisplay/contentElements/vkOnWhite.png');
+        }
+        .leftBar__social{
+            position: relative;
+            &:after {
+                opacity: .4;
+                content: '';
+                background-image: url('../img/mainDisplay/contentElements/bluurMouse.png');
+                position: absolute;
+                top: -7px;
+                left: -10px;
+                width: 35px;
+                height: 35px;
+                background-size: cover;
+            }
+        }
+        .leftBar__mouse {
+            background-image: url('../img/mainDisplay/contentElements/mouse-on-white-bg.png');
+            position: relative;
+            &:after {
+                content: '';
+                background-image: url('../img/mainDisplay/contentElements/bluurMouse.png');
+                position: absolute;
+                top: -7px;
+                left: -15px;
+                width: 54px;
+                height: 62px;
+            }
+        }
+        .leftBar__text {
+            color: #3c8ffc;
+        }
+    }
+}

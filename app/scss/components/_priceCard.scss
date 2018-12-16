@@ -1,0 +1,63 @@
+.priceCard{
+    background-color: #ffffff;
+    border-radius: 10px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 4px;
+    box-shadow: 0 13px 12px rgba(0, 0, 0, 0.08);
+    position: relative;
+    &__header{
+        border-top-left-radius: 5px;
+        height: 70px;
+        display: flex;
+        background: linear-gradient(to bottom, rgba(118,45,221,1) 0%,rgba(118,45,221,1) 9%,rgba(109,32,219,1) 10%);
+        border-top-right-radius: 10px;
+    }
+    &__icon{
+        background: linear-gradient(to bottom, rgba(132,58,238,1) 0%,rgba(132,58,238,1) 9%,rgba(124,46,237,1) 10%);
+        width: 84px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-top-right-radius: 5px;
+        border-top-left-radius: 3px;
+    }
+    &__title{
+        flex-grow: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        letter-spacing: -0.48px;
+        text-transform: uppercase;
+        font-size: .67rem;
+        font-family: 'Acrom';
+        font-weight: bold;
+        color: #ffffff;
+    }
+    &__content{
+        padding: 25px 41px 25px 38px;
+    }
+    &__item{
+        font-weight: 700;
+        letter-spacing: -0.42px;
+        font-family: Acrom;
+        font-size: .583rem;
+        padding-left: 11px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        list-style-image: url('../img/mainDisplay/contentElements/marker.png');
+    }
+    &__price{
+        color: #282828;
+        font-family: "Roboto";
+        font-weight: 900;
+        font-size: 1rem;
+        border-top: 1px solid #d8d8d8;
+        padding: 33px 0 51px 0;
+        text-align: center;
+    }
+    &__footer{
+        left: 50%;
+        transform: translate(-50%, -50%);
+        position: absolute;
+    }
+}

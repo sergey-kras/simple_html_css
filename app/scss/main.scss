@@ -1,3 +1,37 @@
 @import "normalize";
 @import "smart-grid";
 @import "settings";
+@import "fonts";
+
+@import "./libs/owl.carousel.min";
+
+@import "./sections/mainDisplay";
+@import "./sections/portfolio";
+@import "./sections/topBar";
+@import "./sections/leftBar";
+@import "./sections/stepLine";
+@import "./sections/services";
+@import "./sections/team";
+@import "./sections/partners";
+@import "./sections/blog";
+@import "./sections/contacts";
+
+@import "./components/bottomText";
+@import "./components/bigWrapper";
+@import "./components/creativeBlock";
+@import "./components/bananaImage";
+@import "./components/button";
+@import "./components/burger";
+@import "./components/case";
+@import "./components/title";
+@import "./components/priceCard";
+@import "./components/stepDevelop";
+@import "./components/peopleSlider";
+@import "./components/peopleCart";
+@import "./components/successBlock";
+@import "./components/post";
+@import "./components/label";
+@import "./components/iconText";
+@import "./components/email";
+@import "./components/inSocial";
+

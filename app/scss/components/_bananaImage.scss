@@ -1,0 +1,100 @@
+.bananaImage {
+    width: 52vw;
+    max-width: 927px;
+    position: relative;
+    &__image {
+        display: inline-block;
+        margin-left: 3%;
+        width: 100%;
+    }
+    &__shadow {
+        margin-top: -50px;
+        text-align: center;
+    }
+    &__coubsAbsoluteElements {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 0;
+        .bananaImage__coubAbsoluteElement {
+            position: absolute;
+            display: inline-block;
+            &._number_1 {
+                left: -120px;
+                top: 30px;
+            }
+            &._number_2 {
+                left: -1vw;
+                top: 23vh;
+            }
+            &._number_3 {
+                left: 14vw;
+                top: 40vh;
+            }
+            &._number_4 {
+                display: none;
+            }
+            &._number_5 {
+                right: 1vw;
+                top: 30vh;
+            }
+            &._number_6 {
+                display: none;
+            }
+            &._number_7 {
+                right: -5vw;
+                top: -6vh;
+            }
+            &._number_8 {
+                right: 12vw;
+                top: -4vh;
+            }
+            &._number_9 {
+                right: 17vw;
+                top: 6vh;
+            }
+            &._number_10 {
+                right: 20vw;
+                top: 12vh;
+            }
+            &._number_11 {
+                right: 27vw;
+                top: 4vh;
+            }
+            &._number_12 {
+                right: 33vw;
+                top: 2vh;
+            }
+        }
+    }
+    &__grassAbsoluteElements {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 0;
+        .bananaImage__grassAbsoluteElement {
+            position: absolute;
+            display: inline-block;
+            &._number_1 {
+                right: 64.5%;
+                top: 32.3%;
+            }
+            &._number_2 {
+                right: 56.5%;
+                top: 31.3%;
+            }
+            &._number_3 {
+                right: 33.9%;
+                top: 35.3%;
+            }
+            &._number_4 {
+                right: 31.9%;
+                top: 14.2%;
+            }
+        }
+    }
+}

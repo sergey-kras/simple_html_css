@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&subset=cyrillic');
+@font-face {
+    font-family: 'Acrom';
+    src: url('Acrom-Regular.eot');
+    src: local('Acrom Regular'), local('../fonts/Acrom-Regular'), url('../fonts/Acrom-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/Acrom-Regular.woff') format('woff'), url('../fonts/Acrom-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Acrom';
+    src: url('Acrom-Bold.eot');
+    src: local('Acrom Bold'), local('Acrom-Bold'), url('../fonts/Acrom-Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/Acrom-Bold.woff') format('woff'), url('../fonts/Acrom-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Acrom';
+    src: url('Acrom-Thin.eot');
+    src: local('Acrom Thin'), local('Acrom-Thin'), url('../fonts/Acrom-Thin.eot?#iefix') format('embedded-opentype'), url('../fonts/Acrom-Thin.woff') format('woff'), url('../fonts/Acrom-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Acrom';
+    src: url('Acrom-Light.eot');
+    src: local('Acrom Light'), local('Acrom-Light'), url('../fonts/Acrom-Light.eot?#iefix') format('embedded-opentype'), url('../fonts/Acrom-Light.woff') format('woff'), url('../fonts/Acrom-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Acrom';
+    src: url('Acrom-ExtraBold.eot');
+    src: local('Acrom ExtraBold'), local('Acrom-ExtraBold'), url('../fonts/Acrom-ExtraBold.eot?#iefix') format('embedded-opentype'), url('../fonts/Acrom-ExtraBold.woff') format('woff'), url('../fonts/Acrom-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Acrom';
+    src: url('Acrom-Medium.eot');
+    src: local('Acrom Medium'), local('Acrom-Medium'), url('../fonts/Acrom-Medium.eot?#iefix') format('embedded-opentype'), url('../fonts/Acrom-Medium.woff') format('woff'), url('../fonts/Acrom-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
