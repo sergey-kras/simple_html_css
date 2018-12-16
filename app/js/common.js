@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 $('.more').on('click',function () {
     var textBlock = $(this).parent().find('p');
     var more = $(this);
@@ -105,6 +106,18 @@ $(window).on('load', function() {
         items: 4,
         loop: true,
         navText:['<img src="./img/mainDisplay/contentElements/slidearrow.svg">','<img src="./img/mainDisplay/contentElements/slidearrow.svg">']
+=======
+$(window).on('load', function() {
+    $('.fullscreenSlider').owlCarousel({
+        items: 1,
+        pullDrag: false,
+        loop: true,
+        dots: false,
+        animateOut: 'fadeOut',
+        responsiveRefreshRate: 0,
+        autoplay:true,
+        autoplayTimeout:5000,
+>>>>>>> 3f58ff6652276e45fd523f4cd229cbfff1bec9d2
     });
 });
 

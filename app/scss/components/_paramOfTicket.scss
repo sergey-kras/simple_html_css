@@ -1,0 +1,29 @@
+.paramOfTicket{
+    text-align: center;
+    font-family: "Roboto";
+    color: #000;
+    &._accent{
+        color: #93d0f4;
+    }
+    &__title{
+        font-size: 14px;
+        font-weight: 400;
+        color: #93d0f4;
+        margin-bottom: 3px;
+    }
+    &__value{
+        font-weight: 700;
+        font-size: 18px;
+        margin-bottom: 3px;
+    }
+    &__measurement{
+        font-weight: 100;
+        font-size: 14px;
+        &._price{
+            font-weight: 700;
+        }
+    }
+    .fa{
+        font-weight: 100;
+    }
+}

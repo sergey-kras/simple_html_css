@@ -1,0 +1,127 @@
+.ticket{
+    background-color: #fff;
+    box-sizing: border-box;
+    padding: 15px;
+    position: relative;
+
+    &__leftSide{
+        @include size(10);
+    }
+    &__rightSide{
+        @include size(2);
+    }
+    &__leftBar{
+        position: absolute;
+        left: -44px;
+        top: 0;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        font-size: 28px;
+        justify-content: space-between;
+        align-items: center;
+        color: #fff;
+        a{
+            color: rgb(172, 163, 203);
+        }
+    }
+
+    &__rightBar{
+        position: absolute;
+        right: -41px;
+        top: 0;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        font-size: 28px;
+        justify-content: space-between;
+        align-items: center;
+        color: #fff;
+        a{
+            color: rgb(172, 163, 203);
+        }
+    }
+
+    &__image{
+        background-position: center;
+        background-size: cover;
+        height: 90px;
+    }
+
+    &__city{
+        color: #93d0f4;
+        font-family: Roboto;
+        margin-top: 10px;
+    }
+
+    &__content{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__bottom{
+        margin-top: 15px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__button{
+        @include size(4);
+        text-align: right;
+    }
+
+    &__header{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+    &__title{
+        font-family: "Roboto";
+        color: #000;
+        font-size: 18px;
+        text-transform: uppercase;
+        font-weight: 700;
+        display: flex;
+        align-items: center;
+    }
+    &__sideIcon{
+        font-size: 28px;
+        color: #93d0f4;
+        margin: 0 10px;
+    }
+    &__country{
+        text-transform: none;
+        color: #93d0f4;
+        margin-left: 5px;
+    }
+    &__topIcons{
+        color: #93d0f4;
+        font-size: 28px;
+        @include size(8);
+    }
+    &__topIcon{
+        margin-right: 15px;
+    }
+
+    &__params{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__info{
+        font-family: "Roboto";
+        font-size: 14px;
+        font-weight: 100;
+        color: #b0afaf;
+        line-height: 1.4;
+        margin-top: 15px;
+    }
+    &__socials{
+        display: flex;
+    }
+    &__social{
+        margin-right: 15px;
+    }
+}

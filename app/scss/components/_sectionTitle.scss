@@ -1,0 +1,15 @@
+.sectionTitle{
+    font-size: 20px;
+    color: #0093dd;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    font-family: "Roboto";
+    &__more{
+        margin-left: 15px;
+        color: #89d3ff;
+        cursor: pointer;
+    }
+}
